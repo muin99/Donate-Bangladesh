@@ -13,7 +13,7 @@ function getTextValueById(id){
 function showSectionById(id) {
     document.getElementById('history-container').classList.add('hidden');
     document.getElementById('card-container').classList.add('hidden');
-
+    
     document.getElementById(id).classList.remove('hidden');
 
 }
