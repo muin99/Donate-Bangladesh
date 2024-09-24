@@ -14,7 +14,6 @@ document.getElementById('btn-donation').addEventListener('click', function (even
         document.getElementById('acc-balance').innerText = newBalance;
         const newTotalDonation = donationAmount + totalDonation;
         document.getElementById('total-donation').innerText = newTotalDonation;
-
         // history
         const div = document.createElement('div');
         div.classList.add('border-1 border-solid border-gray-100');
