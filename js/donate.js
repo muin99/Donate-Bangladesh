@@ -14,6 +14,10 @@ document.getElementById('btn-donation').addEventListener('click', function (even
         document.getElementById('acc-balance').innerText = newBalance;
         const newTotalDonation = donationAmount + totalDonation;
         document.getElementById('total-donation').innerText = newTotalDonation;
+        const modal = document.getElementById('btn-donation');
+        modal.onclick = function() {
+            my_modal_1.showModal();
+        };
         // history
         const div = document.createElement('div');
         div.classList.add('border-1 border-solid border-gray-100');

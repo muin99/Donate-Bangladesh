@@ -66,7 +66,23 @@
                         and making a positive impact on the lives of those in need.</p>
                     <input id="donation-amount" type="text" placeholder="Write Donation Amount"
                         class="input input-bordered w-full mt-6 mb-4" />
-                    <button id="btn-donation" class="btn btn-success bg-green-400 py-3 px-8 w-full " >Donate Now</button>
+                    <button id="btn-donation" class="btn btn-success bg-green-400 py-3 px-8 w-full">Donate Now</button>
+                    <dialog id="my_modal_1" class="modal">
+                        <div class="modal-box">
+                            <h1 class="text-3xl font-bold text-center">Congrates!</h1>
+                            <div class="flex justify-center py-4">
+                                <img class="" src="assets/coin.png" alt="">
+                            </div>
+                            <p class=" text-center">You have Donated for Humankind</p>
+                            <h3 class="text-center font-bold text-xl pt-3">Successfully</h3>
+                            <div class="modal-action flex justify-center">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close Confirmation</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
             </div>
         </section>
@@ -125,7 +141,7 @@
         <!-- history -->
 
         <section id="history-section" class="hidden">
-            <div id="history-container">
+            <div id="history-container" class="">
 
             </div>
         </section>
