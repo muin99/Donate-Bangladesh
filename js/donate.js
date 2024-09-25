@@ -27,3 +27,4 @@ document.getElementById('btn-donation').addEventListener('click', function (even
 
     document.getElementById('history-section').appendChild(div);
 });
+
