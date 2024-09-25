@@ -1,8 +1,7 @@
 // Noakhali Donation
 document.getElementById('btn-donation').addEventListener('click', function (event) {
     event.preventDefault();
-    handleDonation('donation-amount', 'total-donation', 'Noakhali Flood Relief');
-    
+    handleDonation('donation-amount', 'total-donation-noakhali', 'Noakhali Flood Relief');
 });
 
 // Feni Donation
@@ -19,7 +18,6 @@ document.getElementById('btn-donate-quota').addEventListener('click', function (
 
 // Function to handle donations
 function handleDonation(inputId, totalDonationId, causeName) {
-    event.preventDefault();
     const donationAmount = getInputValueById(inputId);
     const totalBalance = getTextValueById('acc-balance');
     const totalDonation = getTextValueById(totalDonationId);
@@ -36,7 +34,7 @@ function handleDonation(inputId, totalDonationId, causeName) {
     document.getElementById(totalDonationId).innerText = newTotalDonation;
 
     // Show confirmation modal
-    my_modal_1.showModal();
+    document.getElementById('my_modal_1').showModal();
 
     // Add to history
     addToHistory(donationAmount, causeName);
