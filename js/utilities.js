@@ -12,8 +12,19 @@ function getTextValueById(id){
 
 function showSectionById(id) {
     document.getElementById('history-section').classList.add('hidden');
-    document.getElementById('card-container').classList.add('hidden');
-
     document.getElementById(id).classList.remove('hidden');
+    
+    
 }
 
+function hideDonationCards() {
+    document.getElementById('card-1').classList.add('hidden');
+    document.getElementById('card-2').classList.add('hidden');
+    document.getElementById('card-3').classList.add('hidden');
+}
+
+function showAllDonationCards() {
+    document.getElementById('card-1').classList.remove('hidden');
+    document.getElementById('card-2').classList.remove('hidden');
+    document.getElementById('card-3').classList.remove('hidden');
+}
