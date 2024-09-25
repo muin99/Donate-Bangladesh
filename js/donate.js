@@ -26,7 +26,7 @@ document.getElementById('btn-donation').addEventListener('click', function (even
             <p>${currentDateTime}</p>
             `
 
-        document.getElementById('history-container').appendChild(div);
+        document.getElementById('history-section').appendChild(div);
     }
 
 

@@ -2,7 +2,7 @@ const btnDonate = document.getElementById('btn-donate');
 const btnHistory = document.getElementById('btn-history');
 
 document.getElementById('btn-history').addEventListener('click', function () {
-    showSectionById('history-container');
+    showSectionById('history-section');
 
     btnDonate.classList.remove('bg-green-400');
     btnHistory.classList.add('bg-green-400');
